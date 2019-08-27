@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicios do modulo 2</title>
+</head>
+<body>
+    <button id="botao">novo quadrado</button>
+    <div id="quadrados"></div>
+
+    <script>
+        var btnElement = document.querySelector('#botao');
+        var quadradosElement = document.querySelector('#quadrados');
+        btnElement.onclick = function() {
+            var quadrado = document.createElement('div');
+            quadrado.style.width = '100px';
+            quadrado.style.height = '100px';
+            quadrado.style.backgroundColor = '#F00';
+            quadradosElement.appendChild(quadrado);
+        }
+    </script>
+</body>
+</html>
